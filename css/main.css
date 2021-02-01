@@ -1,0 +1,111 @@
+@import url("mobile.css") screen and (max-width: 767px);
+@import url("desktop.css") screen and (min-width: 768px);
+
+@font-face {
+  font-family: gotham-bold;
+  src: url(../fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+  font-family: gotham-light;
+  src: url(../fonts/Gotham-Rounded-Light.otf);
+}
+
+@font-face {
+  font-family: helveltica-light;
+  src: url(../fonts/HelveticaNeue-Light.ttf);
+}
+
+@font-face {
+  font-family: helveltica-medium;
+  src: url(../fonts/HelveticaNeue-medium.ttf);
+}
+
+@font-face {
+  font-family: helveltica-bold;
+  src: url(../fonts/HelveticaNeue-Bold.ttf);
+}
+
+body {
+  background-color: #cccccc54;
+}
+.gotham-bold {
+  font-family: gotham-bold, sans-serif;
+}
+
+.gotham-light {
+  font-family: gotham-light, sans-serif;
+}
+
+.helvetica-light {
+  font-family: helveltica-light;
+}
+
+.helvetica-medium {
+  font-family: helveltica-medium;
+}
+
+.helvetica-bold {
+  font-family: helveltica-bold;
+}
+
+.bgc-black {
+  background-color: #383838;
+}
+
+.txt-black {
+  color: #383838;
+}
+
+.bgc-red {
+  background-color: #d35266;
+}
+
+.txt-red {
+  color: #d35266;
+}
+
+.bgc-gray {
+  background-color: #888888;
+}
+
+.txt-gray {
+  color: #888888;
+}
+
+.nav {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid #e2e2e2;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-nav-section {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-section {
+  align-items: center;
+  margin-left: 20px;
+}
+
+.login-section {
+  align-items: center;
+}
+
+.login-section a {
+  text-decoration: none;
+}
