@@ -29,6 +29,24 @@
 body {
   background-color: #cccccc54;
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  top: 200px;
+}
+
+footer {
+  border-top: 1px solid #ebebeb;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  background-color: beige;
+}
 .gotham-bold {
   font-family: gotham-bold, sans-serif;
 }
@@ -76,14 +94,12 @@ body {
 .nav {
   padding-left: 15px;
   padding-right: 15px;
-  border-bottom: 1px solid #e2e2e2;
   height: 60px;
-  position: fixed;
   width: 100%;
   z-index: 1;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .left-nav-section {
@@ -111,10 +127,37 @@ body {
 }
 
 .search-bar {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 60px;
   padding: 20px 20px;
+}
+
+.hot-ads {
+  display: flex;
+  min-height: 60vh;
+  align-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cover {
+  display: flex;
+}
+
+.cover img {
+  height: 30vh;
+}
+
+.btn-select {
+  border-color: #d35266;
+}
+
+.btn-select:hover {
+  border-color: #d35266;
+  background-color: #d35266;
+}
+
+.section-title {
+  border-bottom: 1px solid #888888;
 }
