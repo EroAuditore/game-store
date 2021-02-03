@@ -133,14 +133,6 @@ footer {
   padding: 20px 20px;
 }
 
-.hot-ads {
-  display: flex;
-  min-height: 60vh;
-  align-items: center;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 .cover {
   display: flex;
 }
@@ -163,17 +155,6 @@ footer {
   padding: 20px 0;
 }
 
-.card-row {
-  display: flex;
-  margin-top: 1.5em;
-  justify-content: space-between;
-}
-
-.card {
-  width: 15rem;
-  font-size: 0.8em;
-  margin: 20px;
-}
 .card-body {
   display: flex;
   flex-direction: column;
@@ -223,7 +204,15 @@ footer {
 }
 
 .filter-section p {
-  border-bottom: 1px solid #888888;
+  border-bottom: 1px solid #88888852;
+}
+
+.result-descr {
+  border-bottom: 1px solid #88888852;
+}
+
+.seach-barside {
+  border-right: 1px solid #88888852;
 }
 
 .form-check-input:checked {
@@ -231,44 +220,19 @@ footer {
   border-color: #d35266;
 }
 
-.result-grid {
-  display: grid;
-  grid-template-areas:
-    "img  header  actionbtn"
-    "img description description"
-    "img date price";
-  grid-template-columns: 260px 1fr 1fr;
-  grid-gap: 1px;
-  padding: 10px;
-}
-
-.result-grid > div {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
 .item-img {
   grid-area: img;
-  max-height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .item-img img {
   grid-area: img;
-  width: 260px;
+  max-width: 100%;
 }
 
 .item-header {
   grid-area: header;
-}
-
-.item-actionbtn {
-  grid-area: actionbtn;
-  display: flex;
-  align-items: center;
-  justify-items: flex-end;
-  justify-content: flex-end;
-  padding-right: 20px;
 }
 
 .item-description {
@@ -281,4 +245,11 @@ footer {
 
 .item-price {
   grid-area: price;
+}
+
+.form-search {
+  width: 100%;
+}
+.form-search button {
+  width: 90%;
 }

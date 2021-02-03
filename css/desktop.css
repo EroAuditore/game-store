@@ -1,1 +1,42 @@
+.card-row {
+  display: flex;
+  margin-top: 1.5em;
+  justify-content: space-between;
+}
 
+.hot-ads {
+  display: flex;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 17rem;
+  font-size: 0.8em;
+  margin: 10px;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-areas:
+    "img  header  actionbtn"
+    "img description description"
+    "img date price";
+  grid-template-columns: 290px 1fr 1fr;
+  grid-gap: 1px;
+  padding: 10px;
+}
+
+.item-actionbtn {
+  grid-area: actionbtn;
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.result-grid > div {
+  background-color: rgba(255, 255, 255, 0.8);
+}

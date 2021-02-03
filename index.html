@@ -18,7 +18,7 @@
 </head>
 <body>
     <header class="header-container">
-        <nav class="bgc-black nav">
+        <nav class="bgc-black nav sticky-top">
             <div class="left-nav-section gotham-bold">
                 <a href="#" ><i class="fas fa-gamepad fa-2x txt-red me-2"></i></a>
                 <span class="text-white"> Online Game Store</span>
@@ -68,9 +68,9 @@
             <h2 class="text-white helvetica-bold">Game store</h2>
             <span class="text-white helvetica-light"> Best place for buying videogames</span>
             <form action="/searchResult.html" class="form-search">
-                <div class="row g-1 mt-2">
+                <div class="row mt-2">
                     <div class="col-4">
-                        <select class="select-cat form-select ">
+                        <select class="select-cat form-select gotham-light">
                             <option value="" selected>Select</option>
                             <option value="Adventure">Adventure</option>
                             <option value="Sports">Sports</option>
@@ -79,10 +79,10 @@
                         </select>
                     </div>
                     <div class="col-5">
-                        <input type="text" class="form-control" placeholder="Game name">
+                        <input type="text" class="form-control gotham-light" placeholder="Game name">
                     </div>
-                    <div class="col-2">
-                        <button type="submit" class="btn bgc-black text-white">Search</button>
+                    <div class="col-3 p-1">
+                        <button type="submit" class="btn bgc-black text-white gotham-light p-1">Search</button>
                     </div>
                 </div>
                 
@@ -109,7 +109,6 @@
                 <img src="/img/playstation-5-with-dualsense-front-product-shot-01-ps5-en-30jul20.png" alt="ps5"/>
             </div>
         </section>
-
         <section class="card-container">
             <div class="section-title">
                 <a href="#" class="text-decoration-none">
@@ -119,7 +118,7 @@
             </div>
             <div class="card-row">
                 <!--Card1 -->
-                <div class="card" >
+                <div class="card d-md-flex" >
                     <img class="card-img-top card-cover" src="/img/Sony/double11-202010-tw-psvr.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title helvetica-bold">PlayStation VR</h5>
@@ -142,7 +141,7 @@
                     </div>
                 </div>
                 <!--Card2-->
-                <div class="card" >
+                <div class="card d-none d-md-flex" >
                     <img class="card-img-top card-cover" src="/img/Sony/dualshock-4-listing-thumb-01-ps4-en-12oct20.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title helvetica-bold">DualShock 4</h5>
@@ -165,7 +164,7 @@
                     </div>
                 </div>
                 <!--Card3-->
-                <div class="card" >
+                <div class="card d-none d-md-flex" >
                     <img class="card-img-top card-cover" src="/img/Sony/ps4-slim-homepage-image-block-04-en-09oct20.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title helvetica-bold">PS4 Slim</h5>
@@ -188,113 +187,7 @@
                     </div>
                 </div>
                 <!--Card4-->
-                <div class="card" >
-                    <img class="card-img-top card-cover" src="/img/Sony/gold-headset-black-product-grid-01-ps4-en-26sep18.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title helvetica-bold">Head Set</h5>
-                      <p class="card-text helvetica-light">Hear the gunshots in 8D with wireless headset for PS systems battery up to 24hrs.</p>
-                      <div class="card-btn">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-sm dropdown-toggle bgc-black btn-plus" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fas fa-plus"></i>
-                                </button>
-                                <ul class="dropdown-menu helvetica-light" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#">Buy now!</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Cart</a></li>
-                                    <li><a class="dropdown-item" href="#">More info</a></li>
-                                </ul>
-                            </div>
-                            <div class="price">
-                                <span class="helvetica-bold txt-red"> 120$</span>
-                            </div>
-                      </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </section>
-
-        <section class="card-container">
-            <div class="section-title">
-                <a href="#" class="text-decoration-none">
-                    <i class="fab fa-playstation  txt-gray"></i>
-                    <span class="txt-gray ms-2 helvetica-medium">Sony (videogames, consoles, joysticks, cases, etc.)</span>
-                </a>
-            </div>
-            <div class="card-row">
-                <!--Card1 -->
-                <div class="card" >
-                    <img class="card-img-top card-cover" src="/img/Sony/double11-202010-tw-psvr.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title helvetica-bold">PlayStation VR</h5>
-                      <p class="card-text helvetica-light">Break the cycle of chaos on an always changing alien planet in this third-person roguelike shooter.</p>
-                      <div class="card-btn">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-sm dropdown-toggle bgc-black btn-plus" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fas fa-plus"></i>
-                                </button>
-                                <ul class="dropdown-menu helvetica-light" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#">Buy now!</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Cart</a></li>
-                                    <li><a class="dropdown-item" href="#">More info</a></li>
-                                </ul>
-                            </div>
-                            <div class="price">
-                                <span class="helvetica-bold txt-red"> 120$</span>
-                            </div>
-                      </div>
-                    </div>
-                </div>
-                <!--Card2-->
-                <div class="card" >
-                    <img class="card-img-top card-cover" src="/img/Sony/dualshock-4-listing-thumb-01-ps4-en-12oct20.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title helvetica-bold">DualShock 4</h5>
-                      <p class="card-text helvetica-light">Break the cycle of chaos on an always with the new joystick with HDR function.</p>
-                      <div class="card-btn">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-sm dropdown-toggle bgc-black btn-plus" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fas fa-plus"></i>
-                                </button>
-                                <ul class="dropdown-menu helvetica-light" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#">Buy now!</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Cart</a></li>
-                                    <li><a class="dropdown-item" href="#">More info</a></li>
-                                </ul>
-                            </div>
-                            <div class="price">
-                                <span class="helvetica-bold txt-red"> 100$</span>
-                            </div>
-                      </div>
-                    </div>
-                </div>
-                <!--Card3-->
-                <div class="card" >
-                    <img class="card-img-top card-cover" src="/img/Sony/ps4-slim-homepage-image-block-04-en-09oct20.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title helvetica-bold">PS4 Slim</h5>
-                      <p class="card-text helvetica-light">Enjoy your favourite games with the new PS4 slim supports 1090 fullHD and 4K video output.</p>
-                      <div class="card-btn">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-sm dropdown-toggle bgc-black btn-plus" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fas fa-plus"></i>
-                                </button>
-                                <ul class="dropdown-menu helvetica-light" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#">Buy now!</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Cart</a></li>
-                                    <li><a class="dropdown-item" href="#">More info</a></li>
-                                </ul>
-                            </div>
-                            <div class="price">
-                                <span class="helvetica-bold txt-red"> 399$</span>
-                            </div>
-                      </div>
-                    </div>
-                </div>
-                <!--Card4-->
-                <div class="card" >
+                <div class="card d-none d-lg-flex" >
                     <img class="card-img-top card-cover" src="/img/Sony/gold-headset-black-product-grid-01-ps4-en-26sep18.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title helvetica-bold">Head Set</h5>
