@@ -175,12 +175,6 @@ footer {
   font-size: 17px;
 }
 
-.footer-links-social {
-  display: flex;
-  justify-content: space-evenly;
-  flex: 1;
-}
-
 .footer-links-social li {
   list-style: none;
 }
@@ -189,18 +183,14 @@ footer {
   color: #383838;
 }
 .about-links li {
-  border-right: 1px solid #d35266;
   padding-right: 20px;
   margin-right: 20px;
   padding-left: 0;
 }
 
-.footer-links a {
+.footer-links a,
+.about-links a {
   text-decoration: none;
-}
-
-.footer-legal {
-  display: flex;
 }
 
 .filter-section p {
@@ -209,6 +199,9 @@ footer {
 
 .result-descr {
   border-bottom: 1px solid #88888852;
+}
+.cat-links p {
+  border-bottom: 1px solid #d35266;
 }
 
 .seach-barside {
