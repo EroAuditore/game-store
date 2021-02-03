@@ -47,6 +47,7 @@ footer {
   margin-bottom: 25px;
   background-color: beige;
 }
+
 .gotham-bold {
   font-family: gotham-bold, sans-serif;
 }
@@ -56,15 +57,15 @@ footer {
 }
 
 .helvetica-light {
-  font-family: helveltica-light;
+  font-family: helveltica-light, sans-serif;
 }
 
 .helvetica-medium {
-  font-family: helveltica-medium;
+  font-family: helveltica-medium, sans-serif;
 }
 
 .helvetica-bold {
-  font-family: helveltica-bold;
+  font-family: helveltica-bold, sans-serif;
 }
 
 .bgc-black {
@@ -84,11 +85,11 @@ footer {
 }
 
 .bgc-gray {
-  background-color: #888888;
+  background-color: #888;
 }
 
 .txt-gray {
-  color: #888888;
+  color: #888;
 }
 
 .nav {
@@ -151,7 +152,7 @@ footer {
 }
 
 .section-title {
-  border-bottom: 1px solid #888888;
+  border-bottom: 1px solid #888;
   padding: 20px 0;
 }
 
@@ -182,6 +183,7 @@ footer {
 .footer-links-social i {
   color: #383838;
 }
+
 .about-links li {
   padding-right: 20px;
   margin-right: 20px;
@@ -200,6 +202,7 @@ footer {
 .result-descr {
   border-bottom: 1px solid #88888852;
 }
+
 .cat-links p {
   border-bottom: 1px solid #d35266;
 }
@@ -219,6 +222,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
 .item-img img {
   grid-area: img;
   max-width: 100%;
@@ -243,6 +247,7 @@ footer {
 .form-search {
   width: 100%;
 }
+
 .form-search button {
   width: 90%;
 }
