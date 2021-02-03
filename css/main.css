@@ -221,3 +221,64 @@ footer {
 .footer-legal {
   display: flex;
 }
+
+.filter-section p {
+  border-bottom: 1px solid #888888;
+}
+
+.form-check-input:checked {
+  background-color: #d35266;
+  border-color: #d35266;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-areas:
+    "img  header  actionbtn"
+    "img description description"
+    "img date price";
+  grid-template-columns: 260px 1fr 1fr;
+  grid-gap: 1px;
+  padding: 10px;
+}
+
+.result-grid > div {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.item-img {
+  grid-area: img;
+  max-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-img img {
+  grid-area: img;
+  width: 260px;
+}
+
+.item-header {
+  grid-area: header;
+}
+
+.item-actionbtn {
+  grid-area: actionbtn;
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.item-description {
+  grid-area: description;
+}
+
+.item-date {
+  grid-area: date;
+}
+
+.item-price {
+  grid-area: price;
+}
