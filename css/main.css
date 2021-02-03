@@ -251,3 +251,12 @@ footer {
 .form-search button {
   width: 90%;
 }
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+}
+
+i:hover {
+  color: #d35266;
+}
