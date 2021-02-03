@@ -69,7 +69,7 @@
             <span class="text-white helvetica-light"> Best place for buying videogames</span>
             <form action="/searchResult.html" class="form-search">
                 <div class="row mt-2">
-                    <div class="col-4">
+                    <div class="col-3">
                         <select class="select-cat form-select gotham-light">
                             <option value="" selected>Select</option>
                             <option value="Adventure">Adventure</option>
@@ -78,15 +78,17 @@
                             <option value="RPG">RPG</option>
                         </select>
                     </div>
-                    <div class="col-5">
+                    <div class="col-4">
+                        <input type="text" class="form-control gotham-light" placeholder="location">
+                    </div>
+                    <div class="col-4">
                         <input type="text" class="form-control gotham-light" placeholder="Game name">
                     </div>
-                    <div class="col-3 p-1">
+                    <div class="col-1 p-1">
                         <button type="submit" class="btn bgc-black text-white gotham-light p-1">Search</button>
                     </div>
                 </div>
-                
-                            </form>
+            </form>
         </div>
     </header>
     <main class="container-fluid ">
@@ -95,19 +97,19 @@
                 <section class="filter-section helvetica-light txt-gray">
                     <p class="helvetica-bold">Type</p>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="sportCheck">
+                        <input class="form-check-input" type="checkbox" value="" id="sportCheck" checked>
                         <label class="form-check-label" for="sportCheck">
                           Sports
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="rpgCheck" checked>
+                        <input class="form-check-input" type="checkbox" value="" id="rpgCheck" >
                         <label class="form-check-label" for="rpgCheck">
                           RPG
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="adventureCheck" checked>
+                        <input class="form-check-input" type="checkbox" value="" id="adventureCheck" >
                         <label class="form-check-label" for="adventureCheck">
                           Adventure
                         </label>
@@ -123,36 +125,36 @@
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="rpgCheck" checked>
+                        <input class="form-check-input" type="checkbox" value="" id="rpgCheck" >
                         <label class="form-check-label" for="rpgCheck">
                           RPG
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="adventureCheck" checked>
+                        <input class="form-check-input" type="checkbox" value="" id="adventureCheck" >
                         <label class="form-check-label" for="adventureCheck">
                           Adventure
                         </label>
                     </div>
                 </section>
                 <section class="filter-section helvetica-light txt-gray">
-                    <p class="helvetica-bold">Type</p>
+                    <p class="helvetica-bold">Console</p>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="sportCheck">
                         <label class="form-check-label" for="sportCheck">
-                          Sports
+                          PlayStation
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="rpgCheck" checked>
+                        <input class="form-check-input" type="checkbox" value="" id="rpgCheck" >
                         <label class="form-check-label" for="rpgCheck">
-                          RPG
+                          Xbox
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="adventureCheck" checked>
+                        <input class="form-check-input" type="checkbox" value="" id="adventureCheck" >
                         <label class="form-check-label" for="adventureCheck">
-                          Adventure
+                          Nintendo
                         </label>
                     </div>
                 </section>
@@ -203,6 +205,137 @@
                     
                     
                 </section>
+                <section class="item-container">
+                    <div class="result-grid mt-3">
+                       <div class="item-img">
+                           <a href="#">
+                               <img src="./img/ps5-hzd-video-thumb-block-05-en-110620.jpg" />
+                           </a>
+                       </div>
+                       <div class="item-actionbtn">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle bgc-black btn-plus" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <ul class="dropdown-menu helvetica-light" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Buy now!</a></li>
+                                    <li><a class="dropdown-item" href="#">Add to Cart</a></li>
+                                    <li><a class="dropdown-item" href="#">More info</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-header">
+                            <span class="helvetica-bold">Horizon Forbidden West</span>
+                        </div>
+                       <div class="item-description">
+                            <p class="helvetica-light">Join Aloy as she braves the Forbidden West - a majestic but dangerous frontier that conceals mysterious new threats.</p>
+                       </div>
+                       <div class="item-date">
+                           <span class="helvetica-light">
+                               1 feb 2021
+                           </span>
+                       </div>
+                       <div class="item-price">
+                        <div class="price">
+                            <span class="helvetica-bold txt-red"> 120$</span>
+                        </div>
+                       </div>
+                    </div>
+                </section>
+                <section class="item-container">
+                    <div class="result-grid mt-3">
+                       <div class="item-img">
+                           <a href="#">
+                               <img src="./img/ps5-ratchet_clank-video-thumb-block-06-en-110620.jpg" />
+                           </a>
+                       </div>
+                       
+                       <div class="item-actionbtn">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle bgc-black btn-plus" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <ul class="dropdown-menu helvetica-light" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Buy now!</a></li>
+                                    <li><a class="dropdown-item" href="#">Add to Cart</a></li>
+                                    <li><a class="dropdown-item" href="#">More info</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-header">
+                            <span class="helvetica-bold">Ratchet & Clank: Rift Apart</span>
+                        </div>
+                       <div class="item-description">
+                            <p class="helvetica-light">Blast your way through an interdimensional adventure with Ratchet and Clank.</p>
+                       </div>
+                       <div class="item-date">
+                           <span class="helvetica-light">
+                               1 feb 2021
+                           </span>
+                       </div>
+                       <div class="item-price">
+                        <div class="price">
+                            <span class="helvetica-bold txt-red"> 120$</span>
+                        </div>
+                       </div>
+                        
+                    </div>
+                    
+                    
+                </section>
+                <section class="item-container">
+                    <div class="result-grid mt-3">
+                       <div class="item-img">
+                           <a href="#">
+                               <img src="./img/ps5-spiderman-video-thumb-block-9-en-110620.jpg" />
+                           </a>
+                       </div>
+                       <div class="item-actionbtn">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle bgc-black btn-plus" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <ul class="dropdown-menu helvetica-light" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Buy now!</a></li>
+                                    <li><a class="dropdown-item" href="#">Add to Cart</a></li>
+                                    <li><a class="dropdown-item" href="#">More info</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-header">
+                            <span class="helvetica-bold">Marvel's Spider-Man: Miles Morales</span>
+                        </div>
+                       <div class="item-description">
+                            <p class="helvetica-light">Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.</p>
+                       </div>
+                       <div class="item-date">
+                           <span class="helvetica-light">
+                               1 feb 2021
+                           </span>
+                       </div>
+                       <div class="item-price">
+                        <div class="price">
+                            <span class="helvetica-bold txt-red"> 120$</span>
+                        </div>
+                       </div>
+                    </div>
+                </section>
+                <section class="item-container">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link txt-red" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link txt-red" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link txt-red" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link txt-red" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </section>
+                
             </div>
             
         </div>
