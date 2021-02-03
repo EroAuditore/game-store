@@ -139,7 +139,9 @@ footer {
 }
 
 .cover img {
-  height: 30vh;
+  height: 45vh;
+  filter: drop-shadow(0px 5px 3px black);
+  animation: drop 1.5s ease;
 }
 
 .btn-select {
@@ -259,4 +261,15 @@ footer {
 
 i:hover {
   color: #d35266;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
