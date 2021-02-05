@@ -175,6 +175,12 @@ main {
   list-style: none;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 16px;
+}
+
 .footer-links-social i {
   color: #383838;
 }
@@ -192,6 +198,11 @@ main {
 
 .filter-section p {
   border-bottom: 1px solid #88888852;
+}
+
+.footer-section-title {
+  border-bottom: 1px solid #d53266;
+  font-size: 14px;
 }
 
 .result-descr {
