@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css"/>
+    <title>Search Results</title>
+    
+</head>
+<body>
+    <header class="header-container">
+        <nav class="bgc-black nav sticky-top">
+            <div class="left-nav-section gotham-bold">
+                <a href="./index.html" ><i class="fas fa-gamepad fa-2x txt-red me-2"></i></a>
+                <span class="text-white"> Online Game Store</span>
+            </div>
+            <div class="menu-section gotham-bold d-none d-md-flex">
+                <ul class="d-flex list-unstyled text-decoration-none align-items-center main-menu mb-0">
+                    <li >
+                        <a href="./index.html">
+                            <i class="fas fa-home txt-red  "></i>
+                            <span class="txt-red ms-2">Home</span>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="#">
+                            <i class="fab fa-playstation  text-white"></i>
+                            <span class="text-white ms-2">Sony</span>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="#">
+                            <i class="fab fa-xbox  text-white"></i>
+                            <span class="text-white ms-2">Xbox</span>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="#">
+                            <i class="fas fa-tags  text-white"></i>
+                            <span class="text-white ms-2">Deals</span>
+                        </a>
+                    </li>
+                </ul>
+                <button type="submit" class="btn bgc-red text-white gotham-light p-1 ms-2">POST AND AD</button>
+            </div>
+            <div class="login-section d-flex gotham-bold">
+                <a href="#" class="d-none d-md-flex align-items-center">
+                    <i class="fas fa-user txt-red me-2"></i>
+                    <img class="user-img" src="./img/user.jpg" alt="user login"/>
+                    <span class="text-white ms-2"> Eduardo</span>
+                </a>
+                <a href="#" class="d-flex d-md-none">
+                    <i class="fas fa-bars txt-red fa-2x"></i>
+                </a>
+                
+            </div>
+
+        </nav>
+        <div class="search-bar bgc-red">
+            <h1 class="text-white helvetica-bold">Game store</h1>
+            <span class="text-white helvetica-light"> Best place for buying videogames</span>
+            <form action="/searchResult.html" class="form-search">
+                <div class="row d-none d-md-flex mt-2">
+                    <div class="col-3">
+                        <select class="select-cat form-select gotham-light">
+                            <option value="" selected>Select</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Platform">Platform</option>
+                            <option value="RPG">RPG</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control gotham-light" placeholder="location">
+                    </div>
+                    <div class="col-4 ">
+                        <input type="text" class="form-control gotham-light" placeholder="Game name">
+                    </div>
+                    <div class="col-2 p-1">
+                        <button type="submit" class="btn bgc-black text-white gotham-light p-1">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+    <main class="container-fluid ">
+        <div class="row">
+            <aside class="seach-barside d-none d-lg-block col-md-3 sticky-top mt-2">
+                <section class="filter-section helvetica-light txt-gray">
+                    <p class="helvetica-bold">Type</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value=""  checked>
+                        <label class="form-check-label" >
+                          Sports
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value=""  >
+                        <label class="form-check-label" >
+                          RPG
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value=""  >
+                        <label class="form-check-label" >
+                          Adventure
+                        </label>
+                    </div>
+                </section>
+
+                <section class="filter-section helvetica-light txt-gray">
+                    <p class="helvetica-bold">Type</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" >
+                          Sports
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value=""  >
+                        <label class="form-check-label" >
+                          RPG
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value=""  >
+                        <label class="form-check-label" >
+                          Adventure
+                        </label>
+                    </div>
+                </section>
+                <section class="filter-section helvetica-light txt-gray">
+                    <p class="helvetica-bold">Console</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" >
+                        <label class="form-check-label" >
+                          PlayStation
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value=""  >
+                        <label class="form-check-label" >
+                          Xbox
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value=""  >
+                        <label class="form-check-label" >
+                          Nintendo
+                        </label>
+                    </div>
+                </section>
+                
+            </aside>
+            <div class="result-container col-12 col-lg-9 mt-2">
+                <section class="result-descr">
+                    <span class="helvetica-light txt-gray">Search shows 500 of 1000 items...</span>
+                </section>
+                <section class="item-container">
+                    <div class="result-grid mt-3">
+                       <div class="item-img">
+                           <a href="#">
+                               <img src="./img/ps5-gt7-video-thumb-block-07-en-110620.jpg" alt="PS5 videogame" />
+                           </a>
+                       </div>
+                       
+                       <div class="item-actionbtn">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle bgc-black btn-plus" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <ul class="dropdown-menu helvetica-light" >
+                                    <li><a class="dropdown-item" href="#">Buy now!</a></li>
+                                    <li><a class="dropdown-item" href="#">Add to Cart</a></li>
+                                    <li><a class="dropdown-item" href="#">More info</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-header">
+                            <span class="helvetica-bold">Gran TurismoTM 7</span>
+                        </div>
+                       <div class="item-description">
+                            <p class="helvetica-light">Gran Turismo 7 builds on 22 years of experience to bring you the best features from the history of the franchise.</p>
+                       </div>
+                       <div class="item-date">
+                           <span class="helvetica-light">
+                               1 feb 2021
+                           </span>
+                       </div>
+                       <div class="item-price">
+                        <div class="price">
+                            <span class="helvetica-bold txt-red"> 120$</span>
+                        </div>
+                       </div>
+                        
+                    </div>
+                    
+                    
+                </section>
+                <section class="item-container">
+                    <div class="result-grid mt-3">
+                       <div class="item-img">
+                           <a href="#">
+                               <img src="./img/ps5-hzd-video-thumb-block-05-en-110620.jpg" alt="PS5 videogame" />
+                           </a>
+                       </div>
+                       <div class="item-actionbtn">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle bgc-black btn-plus" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <ul class="dropdown-menu helvetica-light" >
+                                    <li><a class="dropdown-item" href="#">Buy now!</a></li>
+                                    <li><a class="dropdown-item" href="#">Add to Cart</a></li>
+                                    <li><a class="dropdown-item" href="#">More info</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-header">
+                            <span class="helvetica-bold">Horizon Forbidden West</span>
+                        </div>
+                       <div class="item-description">
+                            <p class="helvetica-light">Join Aloy as she braves the Forbidden West - a majestic but dangerous frontier that conceals mysterious new threats.</p>
+                       </div>
+                       <div class="item-date">
+                           <span class="helvetica-light">
+                               1 feb 2021
+                           </span>
+                       </div>
+                       <div class="item-price">
+                        <div class="price">
+                            <span class="helvetica-bold txt-red"> 120$</span>
+                        </div>
+                       </div>
+                    </div>
+                </section>
+                <section class="item-container">
+                    <div class="result-grid mt-3">
+                       <div class="item-img">
+                           <a href="#">
+                               <img src="./img/ps5-ratchet_clank-video-thumb-block-06-en-110620.jpg" alt="PS5 videogame" />
+                           </a>
+                       </div>
+                       
+                       <div class="item-actionbtn">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle bgc-black btn-plus" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <ul class="dropdown-menu helvetica-light" >
+                                    <li><a class="dropdown-item" href="#">Buy now!</a></li>
+                                    <li><a class="dropdown-item" href="#">Add to Cart</a></li>
+                                    <li><a class="dropdown-item" href="#">More info</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-header">
+                            <span class="helvetica-bold">Ratchet & Clank: Rift Apart</span>
+                        </div>
+                       <div class="item-description">
+                            <p class="helvetica-light">Blast your way through an interdimensional adventure with Ratchet and Clank.</p>
+                       </div>
+                       <div class="item-date">
+                           <span class="helvetica-light">
+                               1 feb 2021
+                           </span>
+                       </div>
+                       <div class="item-price">
+                        <div class="price">
+                            <span class="helvetica-bold txt-red"> 120$</span>
+                        </div>
+                       </div>
+                        
+                    </div>
+                    
+                    
+                </section>
+                <section class="item-container">
+                    <div class="result-grid mt-3">
+                       <div class="item-img">
+                           <a href="#">
+                               <img src="./img/ps5-spiderman-video-thumb-block-9-en-110620.jpg" alt="PS5 videogame" />
+                           </a>
+                       </div>
+                       <div class="item-actionbtn">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle bgc-black btn-plus" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <ul class="dropdown-menu helvetica-light" >
+                                    <li><a class="dropdown-item" href="#">Buy now!</a></li>
+                                    <li><a class="dropdown-item" href="#">Add to Cart</a></li>
+                                    <li><a class="dropdown-item" href="#">More info</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-header">
+                            <span class="helvetica-bold">Marvel's Spider-Man: Miles Morales</span>
+                        </div>
+                       <div class="item-description">
+                            <p class="helvetica-light">Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.</p>
+                       </div>
+                       <div class="item-date">
+                           <span class="helvetica-light">
+                               1 feb 2021
+                           </span>
+                       </div>
+                       <div class="item-price">
+                        <div class="price">
+                            <span class="helvetica-bold txt-red"> 120$</span>
+                        </div>
+                       </div>
+                    </div>
+                </section>
+                <section class="item-container">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link txt-red" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link txt-red" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link txt-red" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link txt-red" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </section>
+                
+            </div>
+            
+        </div>
+    </main>
+    <footer class="container-fluid m-0 footer border-top pt-4 bg-light">
+        <div class="row m-0 g-0 ">
+          <div class="col-12 col-md-6 col-lg-3 px-2 px-md-4">
+            <a class="navbar-brand me-1 helvetica-bold text-muted" href="#">
+                <i class="fas fa-gamepad ps-0 p-2 fw-bold"></i>GAMESHOP</a>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas illo
+              non ex, nihil voluptates saepe ipsum animi ea facilis iste. Omnis
+              numquam sed unde illum!
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 px-2 px-md-4">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="gotham-rounded txt-red footer-section-title">
+                  CATEGORIES
+                </h3>
+              </div>
+              <div class="col-6">
+                <ul class="footer-links list-unstyled">
+                  <li class="footer-item helvetica-ligth">
+                    <a class="text-muted" href="#">PS</a>
+                  </li>
+                  <li class="footer-item helvetica-ligth">
+                    <a class="text-muted" href="#">xbox</a>
+                  </li>
+                  <li class="footer-item helvetica-ligth">
+                    <a class="text-muted" href="#">nintendo</a>
+                  </li>
+                  <li class="footer-item helvetica-ligth">
+                    <a class="text-muted" href="#">sega</a>
+                  </li>
+                  <li class="footer-item helvetica-ligth">
+                    <a class="text-muted" href="#">microsoft</a>
+                  </li>
+                  <li class="footer-item helvetica-ligth">
+                    <a class="text-muted" href="#">Kids</a>
+                  </li>
+                  <li class="footer-item helvetica-ligth">
+                    <a class="text-muted" href="#"> Accesories</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="footer-links list-unstyled">
+                    <li class="footer-item helvetica-ligth">
+                      <a class="text-muted" href="#">PS</a>
+                    </li>
+                    <li class="footer-item helvetica-ligth">
+                      <a class="text-muted" href="#">xbox</a>
+                    </li>
+                    <li class="footer-item helvetica-ligth">
+                      <a class="text-muted" href="#">nintendo</a>
+                    </li>
+                    <li class="footer-item helvetica-ligth">
+                      <a class="text-muted" href="#">sega</a>
+                    </li>
+                    <li class="footer-item helvetica-ligth">
+                      <a class="text-muted" href="#">microsoft</a>
+                    </li>
+                    <li class="footer-item helvetica-ligth">
+                      <a class="text-muted" href="#">Kids</a>
+                    </li>
+                    <li class="footer-item helvetica-ligth">
+                      <a class="text-muted" href="#"> Accesories</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 px-2 px-md-4">
+            <h3 class="txt-red gotham-rounded footer-section-title">
+              NAVIGATION
+            </h3>
+  
+            <ul class="footer-links list-unstyled">
+              <li class="footer-item helvetica-ligth">
+                <a class="text-muted" href="index.html">Home</a>
+              </li>
+              <li class="footer-item helvetica-ligth">
+                <a class="text-muted" href="#">Sing In</a>
+              </li>
+              <li class="footer-item helvetica-ligth">
+                <a class="text-muted" href="#">Sign Up</a>
+              </li>
+              <li class="footer-item helvetica-ligth">
+                <a class="text-muted" href="#">Terms & Conditions</a>
+              </li>
+              <li class="footer-item helvetica-ligth">
+                <a class="text-muted" href="#">FAQ</a>
+              </li>
+              <li class="footer-item helvetica-ligth">
+                <a class="text-muted" href="#">Help</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="row p-4 user-preferences">
+              <div class="col-5 col-lg-6 g-0 text-center">
+                <p class="txt-red">COUNTRY</p>
+              </div>
+              <div class="col-5 col-lg-6 text-center">
+                <button type="button" class="btn bg-light border w-100">
+                  Spain
+                </button>
+              </div>
+              <div class="col-5 col-lg-6 text-center">
+                <p class="txt-red">LANGUAGE</p>
+              </div>
+              <div class="col-5 col-lg-6 text-center">
+                <button type="button" class="btn bg-light border w-100">
+                  English
+                </button>
+              </div>
+              <div class="col-5 col-lg-6 text-center">
+                <p class="txt-red">CURRENCY</p>
+              </div>
+              <div class="col-5 col-lg-6 text-center">
+                <button type="button" class="btn bg-light border w-100">
+                  MX Peso
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container-fluid m-0 copy-info border-top pt-2 g-0">
+          <div class="col-8 col-sm-9 text-muted copy-right ps-2 ps-md-4">
+            Copyright&copy; 2021 Zattix.com. All Rigths Reserved. Designed by Mohammed Awad. Implemented by Eduardo Rodriguez.
+          </div>
+          <div class="col-3">
+            <ul class="list-unstyled social-icons">
+              <li>
+                <a href="#">
+                  <i class="fab fa-yahoo text-muted pe-2 pe-md-0"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-google-plus-g text-muted pe-2 pe-md-0"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-linkedin-in text-muted pe-2 pe-md-0"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter text-muted pe-2 pe-md-0"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f text-muted"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
