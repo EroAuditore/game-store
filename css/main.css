@@ -267,6 +267,12 @@ i:hover {
   color: #d35266;
 }
 
+.user-img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
 @keyframes drop {
   0% {
     opacity: 0;
