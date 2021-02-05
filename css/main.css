@@ -237,18 +237,22 @@ main {
 
 .item-header {
   grid-area: header;
+  padding-left: 10px;
 }
 
 .item-description {
   grid-area: description;
+  padding-left: 10px;
 }
 
 .item-date {
   grid-area: date;
+  padding-left: 10px;
 }
 
 .item-price {
   grid-area: price;
+  padding-left: 10px;
 }
 
 .form-search {
