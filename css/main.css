@@ -94,6 +94,7 @@ main {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  font-size: 14px;
 }
 
 .left-nav-section {
@@ -269,8 +270,8 @@ i:hover {
 
 .user-img {
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 31px;
 }
 
 @keyframes drop {
